@@ -1,0 +1,11 @@
+C:\Users\Lucio\Desktop\Lucio\Tarea\PasteleriaDesktop\AnimeReposityTesteo\obj\Debug\net8.0\AnimeReposityTesteo.csproj.AssemblyReference.cache
+C:\Users\Lucio\Desktop\Lucio\Tarea\PasteleriaDesktop\AnimeReposityTesteo\obj\Debug\net8.0\AnimeReposityTesteo.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Lucio\Desktop\Lucio\Tarea\PasteleriaDesktop\AnimeReposityTesteo\obj\Debug\net8.0\AnimeReposityTesteo.AssemblyInfoInputs.cache
+C:\Users\Lucio\Desktop\Lucio\Tarea\PasteleriaDesktop\AnimeReposityTesteo\obj\Debug\net8.0\AnimeReposityTesteo.AssemblyInfo.cs
+C:\Users\Lucio\Desktop\Lucio\Tarea\PasteleriaDesktop\AnimeReposityTesteo\obj\Debug\net8.0\AnimeReposityTesteo.csproj.CoreCompileInputs.cache
+C:\Users\Lucio\Desktop\Lucio\Tarea\AnimeDesktop\AnimeReposityTesteo\bin\Debug\net8.0\CoverletSourceRootsMapping_AnimeReposityTesteo
+C:\Users\Lucio\Desktop\Lucio\Tarea\AnimeDesktop\AnimeReposityTesteo\obj\Debug\net8.0\AnimeReposityTesteo.csproj.AssemblyReference.cache
+C:\Users\Lucio\Desktop\Lucio\Tarea\AnimeDesktop\AnimeReposityTesteo\obj\Debug\net8.0\AnimeReposityTesteo.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Lucio\Desktop\Lucio\Tarea\AnimeDesktop\AnimeReposityTesteo\obj\Debug\net8.0\AnimeReposityTesteo.AssemblyInfoInputs.cache
+C:\Users\Lucio\Desktop\Lucio\Tarea\AnimeDesktop\AnimeReposityTesteo\obj\Debug\net8.0\AnimeReposityTesteo.AssemblyInfo.cs
+C:\Users\Lucio\Desktop\Lucio\Tarea\AnimeDesktop\AnimeReposityTesteo\obj\Debug\net8.0\AnimeReposityTesteo.csproj.CoreCompileInputs.cache

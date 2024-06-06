@@ -1,0 +1,17 @@
+C:\Users\Lucio\Desktop\Lucio\Tarea\AnimeDesktop\DesktopAnime\bin\Debug\net8.0-windows\DesktopAnime.exe
+C:\Users\Lucio\Desktop\Lucio\Tarea\AnimeDesktop\DesktopAnime\bin\Debug\net8.0-windows\DesktopAnime.deps.json
+C:\Users\Lucio\Desktop\Lucio\Tarea\AnimeDesktop\DesktopAnime\bin\Debug\net8.0-windows\DesktopAnime.runtimeconfig.json
+C:\Users\Lucio\Desktop\Lucio\Tarea\AnimeDesktop\DesktopAnime\bin\Debug\net8.0-windows\DesktopAnime.dll
+C:\Users\Lucio\Desktop\Lucio\Tarea\AnimeDesktop\DesktopAnime\bin\Debug\net8.0-windows\DesktopAnime.pdb
+C:\Users\Lucio\Desktop\Lucio\Tarea\AnimeDesktop\DesktopAnime\bin\Debug\net8.0-windows\Newtonsoft.Json.dll
+C:\Users\Lucio\Desktop\Lucio\Tarea\AnimeDesktop\DesktopAnime\obj\Debug\net8.0-windows\DesktopAnime.csproj.AssemblyReference.cache
+C:\Users\Lucio\Desktop\Lucio\Tarea\AnimeDesktop\DesktopAnime\obj\Debug\net8.0-windows\DesktopAnime.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Lucio\Desktop\Lucio\Tarea\AnimeDesktop\DesktopAnime\obj\Debug\net8.0-windows\DesktopAnime.AssemblyInfoInputs.cache
+C:\Users\Lucio\Desktop\Lucio\Tarea\AnimeDesktop\DesktopAnime\obj\Debug\net8.0-windows\DesktopAnime.AssemblyInfo.cs
+C:\Users\Lucio\Desktop\Lucio\Tarea\AnimeDesktop\DesktopAnime\obj\Debug\net8.0-windows\DesktopAnime.csproj.CoreCompileInputs.cache
+C:\Users\Lucio\Desktop\Lucio\Tarea\AnimeDesktop\DesktopAnime\obj\Debug\net8.0-windows\DesktopA.0F129696.Up2Date
+C:\Users\Lucio\Desktop\Lucio\Tarea\AnimeDesktop\DesktopAnime\obj\Debug\net8.0-windows\DesktopAnime.dll
+C:\Users\Lucio\Desktop\Lucio\Tarea\AnimeDesktop\DesktopAnime\obj\Debug\net8.0-windows\refint\DesktopAnime.dll
+C:\Users\Lucio\Desktop\Lucio\Tarea\AnimeDesktop\DesktopAnime\obj\Debug\net8.0-windows\DesktopAnime.pdb
+C:\Users\Lucio\Desktop\Lucio\Tarea\AnimeDesktop\DesktopAnime\obj\Debug\net8.0-windows\DesktopAnime.genruntimeconfig.cache
+C:\Users\Lucio\Desktop\Lucio\Tarea\AnimeDesktop\DesktopAnime\obj\Debug\net8.0-windows\ref\DesktopAnime.dll

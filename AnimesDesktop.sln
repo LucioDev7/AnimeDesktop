@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.34928.147
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AnimeReposityTesteo", "AnimeReposityTesteo\AnimeReposityTesteo.csproj", "{7DF9A153-A8F3-4153-B931-BDA74DB82E9C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesktopAnime", "DesktopAnime\DesktopAnime.csproj", "{99188574-831B-49BF-A375-82F79F7F0CB4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7DF9A153-A8F3-4153-B931-BDA74DB82E9C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7DF9A153-A8F3-4153-B931-BDA74DB82E9C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7DF9A153-A8F3-4153-B931-BDA74DB82E9C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7DF9A153-A8F3-4153-B931-BDA74DB82E9C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{99188574-831B-49BF-A375-82F79F7F0CB4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{99188574-831B-49BF-A375-82F79F7F0CB4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{99188574-831B-49BF-A375-82F79F7F0CB4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{99188574-831B-49BF-A375-82F79F7F0CB4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {82AD9C85-8239-4CB5-A855-4037389AA93D}
+	EndGlobalSection
+EndGlobal
