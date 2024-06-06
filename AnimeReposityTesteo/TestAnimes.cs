@@ -39,7 +39,7 @@ namespace AnimeReposityTesteo
         public async Task TestPutAnime()
         {
             AnimeRepository animeRepository = new AnimeRepository();
-            var anime = await animeRepository.PutAsync("Prueba", "TipoTest", "GeneroTest", "24", "https://www3.animeflv.net/uploads/animes/covers/3989.jpg", "https://www.youtube.com/watch?v=Sf7RCzDvJlA&embeds_referring_euri=https%3A%2F%2Fjkanime.net%2F&source_ve_path=MjM4NTE&feature=emb_title", "https://jkanime.net/kenka-dokugaku/9/#option1", 24, "SinopsisTest", "66614386e97f2d3a00000014");
+            var anime = await animeRepository.PutAsync("Prueba", "TipoTest", "GeneroTest", "24", "https://www3.animeflv.net/uploads/animes/covers/3989.jpg", "https://www.youtube.com/watch?v=Sf7RCzDvJlA&embeds_referring_euri=https%3A%2F%2Fjkanime.net%2F&source_ve_path=MjM4NTE&feature=emb_title", "https://jkanime.net/kenka-dokugaku/9/#option1", 24, "SinopsisTest", "6661f359e97f2d3a00001763");
             Assert.That(anime.nombre, Is.EqualTo("Prueba"));
         }
 

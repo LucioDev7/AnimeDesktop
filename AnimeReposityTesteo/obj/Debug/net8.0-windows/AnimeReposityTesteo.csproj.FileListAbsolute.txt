@@ -103,3 +103,4 @@ C:\Users\Lucio\Desktop\Lucio\Tarea\AnimeDesktop\AnimeReposityTesteo\obj\Debug\ne
 C:\Users\Lucio\Desktop\Lucio\Tarea\AnimeDesktop\AnimeReposityTesteo\obj\Debug\net8.0-windows\AnimeReposityTesteo.pdb
 C:\Users\Lucio\Desktop\Lucio\Tarea\AnimeDesktop\AnimeReposityTesteo\obj\Debug\net8.0-windows\AnimeReposityTesteo.genruntimeconfig.cache
 C:\Users\Lucio\Desktop\Lucio\Tarea\AnimeDesktop\AnimeReposityTesteo\obj\Debug\net8.0-windows\ref\AnimeReposityTesteo.dll
+C:\Users\Lucio\Desktop\Lucio\Tarea\AnimeDesktop\AnimeReposityTesteo\obj\Debug\net8.0-windows\AnimeReposityTesteo.sourcelink.json
