@@ -15,6 +15,7 @@ C:\Users\Lucio\Desktop\Lucio\Tarea\AnimeDesktop\DesktopAnime\obj\Debug\net8.0-wi
 C:\Users\Lucio\Desktop\Lucio\Tarea\AnimeDesktop\DesktopAnime\obj\Debug\net8.0-windows\DesktopAnime.pdb
 C:\Users\Lucio\Desktop\Lucio\Tarea\AnimeDesktop\DesktopAnime\obj\Debug\net8.0-windows\DesktopAnime.genruntimeconfig.cache
 C:\Users\Lucio\Desktop\Lucio\Tarea\AnimeDesktop\DesktopAnime\obj\Debug\net8.0-windows\ref\DesktopAnime.dll
-C:\Users\Lucio\Desktop\Lucio\Tarea\AnimeDesktop\DesktopAnime\obj\Debug\net8.0-windows\DesktopAnime.MainMenuView.resources
 C:\Users\Lucio\Desktop\Lucio\Tarea\AnimeDesktop\DesktopAnime\obj\Debug\net8.0-windows\DesktopAnime.csproj.GenerateResource.cache
 C:\Users\Lucio\Desktop\Lucio\Tarea\AnimeDesktop\DesktopAnime\obj\Debug\net8.0-windows\DesktopAnime.sourcelink.json
+C:\Users\Lucio\Desktop\Lucio\Tarea\AnimeDesktop\DesktopAnime\obj\Debug\net8.0-windows\DesktopAnime.loginWindow.resources
+C:\Users\Lucio\Desktop\Lucio\Tarea\AnimeDesktop\DesktopAnime\obj\Debug\net8.0-windows\DesktopAnime.Properties.Resources.resources
