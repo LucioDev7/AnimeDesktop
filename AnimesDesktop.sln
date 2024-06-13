@@ -5,7 +5,7 @@ VisualStudioVersion = 17.10.34928.147
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AnimeReposityTesteo", "AnimeReposityTesteo\AnimeReposityTesteo.csproj", "{7DF9A153-A8F3-4153-B931-BDA74DB82E9C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesktopAnime", "DesktopAnime\DesktopAnime.csproj", "{99188574-831B-49BF-A375-82F79F7F0CB4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DesktopAnime", "DesktopAnime\DesktopAnime.csproj", "{99188574-831B-49BF-A375-82F79F7F0CB4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

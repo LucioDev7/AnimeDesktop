@@ -1,4 +1,5 @@
-﻿using DesktopAnime.Models;
+﻿using DesktopAnime;
+using DesktopAnime.Models;
 using DesktopAnime.Repositories;
 using System;
 using System.Collections.Generic;
@@ -36,7 +37,7 @@ namespace AnimeReposityTesteo
         public async Task TestPostUsuarios()
         {
             UserRepository userRepository = new UserRepository();
-            var user = await userRepository.PostAsync("pianettilucio3@gmail.com", "Contra", "Usu", "Empleado");
+            var user = await userRepository.PostAsync("pianettilucio3@gmail.com", "Contra", "Usu", "Empleado", 10);
             Assert.That(user.usuario, Is.EqualTo("Usu"));
         }
 
@@ -44,7 +45,7 @@ namespace AnimeReposityTesteo
         public async Task TestPutUsuarios()
         {
             UserRepository userRepository = new UserRepository();
-            var user = await userRepository.PutAsync("pianettilucio0@gmail.com", "Cambiado", "Cambiado", "Cambiado", "6661fa1fe97f2d3a00001976");
+            var user = await userRepository.PutAsync("pianettilucio0@gmail.com", "Cambiado", "Cambiado", "Cambiado", 10, "66628cba855eef4300000023");
             Assert.That(user.usuario, Is.EqualTo("Cambiado"));
         }
 
@@ -56,6 +57,20 @@ namespace AnimeReposityTesteo
             Assert.That(borrado, Is.EqualTo(true));
         }
 
+        [Test]
+        public async Task TestGetBySpecificIdAsync()
+        {
+            UserRepository userRepository = new UserRepository();
+            var user = await userRepository.GetBySpecificIdAsync(1);
+            Assert.That(user.usuario, Is.EqualTo("admin"));
+        }
 
+        [Test]
+        public async Task TestVerifyCredentialsAsync()
+        {
+            UserRepository userRepository = new UserRepository();
+            var usuario = await userRepository.VerifyCredentialsAsync("admin", "admin");
+            Assert.That(usuario, Is.EqualTo(true));
+        }
     }
 }

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("DesktopAnime")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+90597c55648ba697f2660bfb9ce618601cb0bd99")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+405ddd03d4739a74ed6e5cbfa235cfe23ef15e71")]
 [assembly: System.Reflection.AssemblyProductAttribute("DesktopAnime")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DesktopAnime")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
