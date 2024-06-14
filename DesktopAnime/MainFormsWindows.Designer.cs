@@ -37,6 +37,12 @@
             button3 = new Button();
             button2 = new Button();
             button1 = new Button();
+            panelPerfil = new Panel();
+            imagenPerfil = new PictureBox();
+            btnCerrarSesion = new Button();
+            MostrarRol = new Label();
+            MostrarNombre = new Label();
+            MostrarCorreo = new Label();
             panelHeader = new Panel();
             label1 = new Label();
             btnRestaurar = new PictureBox();
@@ -47,6 +53,8 @@
             panelMenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)menuMinimizar).BeginInit();
             ((System.ComponentModel.ISupportInitialize)menuMaximizar).BeginInit();
+            panelPerfil.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)imagenPerfil).BeginInit();
             panelHeader.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)btnRestaurar).BeginInit();
             ((System.ComponentModel.ISupportInitialize)btnMinimizar).BeginInit();
@@ -85,6 +93,7 @@
             panelMenu.Controls.Add(button3);
             panelMenu.Controls.Add(button2);
             panelMenu.Controls.Add(button1);
+            panelMenu.Controls.Add(panelPerfil);
             panelMenu.Dock = DockStyle.Left;
             panelMenu.Location = new Point(0, 40);
             panelMenu.Name = "panelMenu";
@@ -96,7 +105,7 @@
             menuMinimizar.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             menuMinimizar.Cursor = Cursors.Hand;
             menuMinimizar.Image = (Image)resources.GetObject("menuMinimizar.Image");
-            menuMinimizar.Location = new Point(187, 17);
+            menuMinimizar.Location = new Point(198, 137);
             menuMinimizar.Name = "menuMinimizar";
             menuMinimizar.Size = new Size(21, 24);
             menuMinimizar.TabIndex = 4;
@@ -108,7 +117,7 @@
             menuMaximizar.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             menuMaximizar.Cursor = Cursors.Hand;
             menuMaximizar.Image = (Image)resources.GetObject("menuMaximizar.Image");
-            menuMaximizar.Location = new Point(187, 17);
+            menuMaximizar.Location = new Point(187, 137);
             menuMaximizar.Name = "menuMaximizar";
             menuMaximizar.Size = new Size(21, 23);
             menuMaximizar.TabIndex = 3;
@@ -124,13 +133,12 @@
             button3.FlatStyle = FlatStyle.Flat;
             button3.Font = new Font("Arial Rounded MT Bold", 12F, FontStyle.Italic);
             button3.ForeColor = Color.White;
-            button3.Location = new Point(0, 233);
+            button3.Location = new Point(3, 338);
             button3.Name = "button3";
             button3.Size = new Size(225, 42);
             button3.TabIndex = 2;
             button3.Text = "button3";
             button3.UseVisualStyleBackColor = true;
-            //button3.Click += button3_Click;
             // 
             // button2
             // 
@@ -141,13 +149,12 @@
             button2.FlatStyle = FlatStyle.Flat;
             button2.Font = new Font("Arial Rounded MT Bold", 12F, FontStyle.Italic);
             button2.ForeColor = Color.White;
-            button2.Location = new Point(0, 185);
+            button2.Location = new Point(-3, 281);
             button2.Name = "button2";
             button2.Size = new Size(225, 42);
             button2.TabIndex = 1;
             button2.Text = "button2";
             button2.UseVisualStyleBackColor = true;
-            //button2.Click += button2_Click;
             // 
             // button1
             // 
@@ -158,13 +165,88 @@
             button1.FlatStyle = FlatStyle.Flat;
             button1.Font = new Font("Arial Rounded MT Bold", 12F, FontStyle.Italic);
             button1.ForeColor = Color.White;
-            button1.Location = new Point(0, 137);
+            button1.Location = new Point(-3, 233);
             button1.Name = "button1";
             button1.Size = new Size(225, 42);
             button1.TabIndex = 0;
             button1.Text = "button1";
             button1.UseVisualStyleBackColor = true;
             button1.Click += button1_Click;
+            // 
+            // panelPerfil
+            // 
+            panelPerfil.BackColor = Color.ForestGreen;
+            panelPerfil.Controls.Add(imagenPerfil);
+            panelPerfil.Controls.Add(btnCerrarSesion);
+            panelPerfil.Controls.Add(MostrarRol);
+            panelPerfil.Controls.Add(MostrarNombre);
+            panelPerfil.Controls.Add(MostrarCorreo);
+            panelPerfil.Location = new Point(-2, -1);
+            panelPerfil.Name = "panelPerfil";
+            panelPerfil.Size = new Size(227, 132);
+            panelPerfil.TabIndex = 6;
+            // 
+            // imagenPerfil
+            // 
+            imagenPerfil.Image = (Image)resources.GetObject("imagenPerfil.Image");
+            imagenPerfil.Location = new Point(164, 68);
+            imagenPerfil.Name = "imagenPerfil";
+            imagenPerfil.Size = new Size(63, 61);
+            imagenPerfil.SizeMode = PictureBoxSizeMode.StretchImage;
+            imagenPerfil.TabIndex = 0;
+            imagenPerfil.TabStop = false;
+            // 
+            // btnCerrarSesion
+            // 
+            btnCerrarSesion.BackColor = Color.Green;
+            btnCerrarSesion.Cursor = Cursors.Hand;
+            btnCerrarSesion.FlatAppearance.BorderSize = 0;
+            btnCerrarSesion.FlatAppearance.MouseDownBackColor = Color.FromArgb(192, 0, 0);
+            btnCerrarSesion.FlatAppearance.MouseOverBackColor = Color.Crimson;
+            btnCerrarSesion.FlatStyle = FlatStyle.Flat;
+            btnCerrarSesion.Font = new Font("Arial Rounded MT Bold", 9.75F, FontStyle.Italic, GraphicsUnit.Point, 0);
+            btnCerrarSesion.ForeColor = Color.White;
+            btnCerrarSesion.ImageAlign = ContentAlignment.MiddleLeft;
+            btnCerrarSesion.Location = new Point(2, 1);
+            btnCerrarSesion.Name = "btnCerrarSesion";
+            btnCerrarSesion.Size = new Size(114, 24);
+            btnCerrarSesion.TabIndex = 5;
+            btnCerrarSesion.Text = "Cerrar Sesión";
+            btnCerrarSesion.UseVisualStyleBackColor = false;
+            btnCerrarSesion.Click += btnCerrarSesion_Click;
+            // 
+            // MostrarRol
+            // 
+            MostrarRol.AutoSize = true;
+            MostrarRol.Font = new Font("Arial Rounded MT Bold", 9F, FontStyle.Italic, GraphicsUnit.Point, 0);
+            MostrarRol.ForeColor = Color.White;
+            MostrarRol.Location = new Point(14, 105);
+            MostrarRol.Name = "MostrarRol";
+            MostrarRol.Size = new Size(26, 14);
+            MostrarRol.TabIndex = 3;
+            MostrarRol.Text = "Rol";
+            // 
+            // MostrarNombre
+            // 
+            MostrarNombre.AutoSize = true;
+            MostrarNombre.Font = new Font("Arial Rounded MT Bold", 9F, FontStyle.Italic, GraphicsUnit.Point, 0);
+            MostrarNombre.ForeColor = Color.White;
+            MostrarNombre.Location = new Point(14, 78);
+            MostrarNombre.Name = "MostrarNombre";
+            MostrarNombre.Size = new Size(54, 14);
+            MostrarNombre.TabIndex = 2;
+            MostrarNombre.Text = "Nombre";
+            // 
+            // MostrarCorreo
+            // 
+            MostrarCorreo.AutoSize = true;
+            MostrarCorreo.Font = new Font("Arial Rounded MT Bold", 9F, FontStyle.Italic, GraphicsUnit.Point, 0);
+            MostrarCorreo.ForeColor = Color.White;
+            MostrarCorreo.Location = new Point(14, 51);
+            MostrarCorreo.Name = "MostrarCorreo";
+            MostrarCorreo.Size = new Size(164, 14);
+            MostrarCorreo.TabIndex = 1;
+            MostrarCorreo.Text = "correoejemplo@gmail.com";
             // 
             // panelHeader
             // 
@@ -256,6 +338,9 @@
             panelMenu.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)menuMinimizar).EndInit();
             ((System.ComponentModel.ISupportInitialize)menuMaximizar).EndInit();
+            panelPerfil.ResumeLayout(false);
+            panelPerfil.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)imagenPerfil).EndInit();
             panelHeader.ResumeLayout(false);
             panelHeader.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)btnRestaurar).EndInit();
@@ -281,5 +366,11 @@
         private Label label1;
         private PictureBox menuMinimizar;
         private PictureBox menuMaximizar;
+        private Button btnCerrarSesion;
+        private Panel panelPerfil;
+        private PictureBox imagenPerfil;
+        private Label MostrarRol;
+        private Label MostrarNombre;
+        private Label MostrarCorreo;
     }
 }

@@ -1,4 +1,5 @@
 ﻿using DesktopAnime.Models;
+using Microsoft.VisualBasic.ApplicationServices;
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
@@ -43,19 +44,9 @@ namespace DesktopAnime.Repositories
 
         }
 
-        public async Task<Users?> GetBySpecificIdAsync(int id)
-        {
-            //Obtenemos los datos por medio del metodo GetUsersAsync y lo guardamos en una variable
-            var users = await GetUsersAsync();
-            //FirstOrDefault(user => user.id == id) Método de LINQ que retorna el primer elemento
-            //de una secuencia que cumple con una condición específica (user.id == id).
-            //Si no se encuentra ningún usuario que coincida, devuelve null.
-            return users?.FirstOrDefault(user => user.id == id);
-        }
-
 
         //Operacion Post
-        public async Task<Users?> PostAsync(string email, string password, string usuario, string rol, int id)
+        public async Task<Users?> PostAsync(string email, string password, string usuario, string rol)
         {
             //Objeto con los parámetros que llegan
             Users user = new Users()
@@ -63,8 +54,7 @@ namespace DesktopAnime.Repositories
                 email = email,
                 password = password,
                 usuario = usuario,
-                rol = rol,
-                id = id
+                rol = rol
             };
 
             //Envio por POST el objeto que creado a la URL de la API
@@ -76,15 +66,14 @@ namespace DesktopAnime.Repositories
         }
 
         //Operacion Put
-        public async Task<Users?> PutAsync(string email, string password, string usuario, string rol, int id, string idAutomatico)
+        public async Task<Users?> PutAsync(string email, string password, string usuario, string rol, string idAutomatico)
         {
             Users user = new Users()
             {
                 email = email,
                 password = password,
                 usuario = usuario,
-                rol = rol,
-                id = id
+                rol = rol
             };
 
             //Envio por PUT del objeto que se creo a la URL de la API
@@ -117,5 +106,21 @@ namespace DesktopAnime.Repositories
             //en caso de que el elemento sea null devolvemos false (?? false)
             return users?.Any(user => (user.email == emailUsuario || user.usuario == emailUsuario) && user.password == password) ?? false;
         }
+
+        // Obtenemos los datos del usuario según el nombre de usuario o email
+        public async Task<Users?> GetUserDataAsync(string username)
+        {
+            // URL para buscar usuarios por nombre de usuario o email
+            string qUrl = $"{urlApi}?q={{\"$or\":[{{\"usuario\":\"{username}\"}},{{\"email\":\"{username}\"}}]}}";
+
+            var response = await client.GetStringAsync(qUrl);
+
+            // Deserializar la respuesta en una lista de usuarios
+            var users = JsonConvert.DeserializeObject<List<Users>>(response);
+
+            // Retornar el primer usuario encontrado
+            return users?.FirstOrDefault();
+        }
+
     }
 }

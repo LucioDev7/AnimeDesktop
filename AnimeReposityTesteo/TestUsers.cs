@@ -37,7 +37,7 @@ namespace AnimeReposityTesteo
         public async Task TestPostUsuarios()
         {
             UserRepository userRepository = new UserRepository();
-            var user = await userRepository.PostAsync("pianettilucio3@gmail.com", "Contra", "Usu", "Empleado", 10);
+            var user = await userRepository.PostAsync("pianettilucio3@gmail.com", "Contra", "Usu", "Empleado");
             Assert.That(user.usuario, Is.EqualTo("Usu"));
         }
 
@@ -45,7 +45,7 @@ namespace AnimeReposityTesteo
         public async Task TestPutUsuarios()
         {
             UserRepository userRepository = new UserRepository();
-            var user = await userRepository.PutAsync("pianettilucio0@gmail.com", "Cambiado", "Cambiado", "Cambiado", 10, "66628cba855eef4300000023");
+            var user = await userRepository.PutAsync("pianettilucio0@gmail.com", "Cambiado", "Cambiado", "Cambiado", "66628cba855eef4300000023");
             Assert.That(user.usuario, Is.EqualTo("Cambiado"));
         }
 
@@ -58,10 +58,10 @@ namespace AnimeReposityTesteo
         }
 
         [Test]
-        public async Task TestGetBySpecificIdAsync()
+        public async Task TestGetUserDataAsync()
         {
             UserRepository userRepository = new UserRepository();
-            var user = await userRepository.GetBySpecificIdAsync(1);
+            var user = await userRepository.GetUserDataAsync("admin");
             Assert.That(user.usuario, Is.EqualTo("admin"));
         }
 

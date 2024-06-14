@@ -1,15 +1,19 @@
+using DesktopAnime.ClassStatic;
+using DesktopAnime.Repositories;
 using System.Runtime.InteropServices;
 
 namespace DesktopAnime
 {
     public partial class MainFormsWindows : Form
     {
+        UserRepository userRepository = new UserRepository();
         public MainFormsWindows()
         {
             InitializeComponent();
             //Estas lineas eliminan los parpadeos del formulario o controles en la interfaz grafica (Pero no en un 100%)
             //this.SetStyle(ControlStyles.ResizeRedraw, true);
             //this.DoubleBuffered = true;
+            MostrarDatosPerfil();
         }
 
         #region FuncionalidadFormulario
@@ -105,6 +109,25 @@ namespace DesktopAnime
         {
             this.WindowState = FormWindowState.Minimized;
         }
+
+        private void menuMinMax_Click(object sender, EventArgs e)
+        {
+            if (panelMenu.Width == 225)
+            {
+                panelMenu.Width = 50;
+                panelPerfil.Height = 0;
+                menuMinimizar.Visible = false;
+                menuMaximizar.Visible = true;
+            }
+            else
+            {
+                panelPerfil.Height = 132;
+                panelMenu.Width = 225;
+                menuMinimizar.Visible = true;
+                menuMaximizar.Visible = false;
+
+            }
+        }
         #endregion
 
         #region MetodoGenericoAbrirFormularios
@@ -136,14 +159,23 @@ namespace DesktopAnime
             //Si el formulario/instancia no existe
             if (formulario == null)
             {
+                //Instancia nueva de formulario
                 formulario = new MiForm();
+                //Para que no sea de nivel superior y poder integrarlo a otro
                 formulario.TopLevel = false;
+                //Elimina los bordes de los formularios
                 formulario.FormBorderStyle = FormBorderStyle.None;
+                //El formulario ocupa todo el espacio del contenedor padre
                 formulario.Dock = DockStyle.Fill;
+                //Añade el formulario al panel de formularios
                 panelFormularios.Controls.Add(formulario);
+                //Guarda una referencia en la propiedad Tag del panel
                 panelFormularios.Tag = formulario;
+                //Muestra el formulario
                 formulario.Show();
+                //Lleva el formulario al frente
                 formulario.BringToFront();
+                //Añade un evento para cuando el formulario se cierre
                 formulario.FormClosed += new FormClosedEventHandler(CloseForms);
             }
             //Si el formulario/instancia existe
@@ -177,22 +209,27 @@ namespace DesktopAnime
         //}
 
         #endregion
-        private void menuMinMax_Click(object sender, EventArgs e)
-        {
-            if (panelMenu.Width == 225)
-            {
-                panelMenu.Width = 50;
 
-                menuMinimizar.Visible = false;
-                menuMaximizar.Visible = true;
-            }
-            else
-            {
-                panelMenu.Width = 225;
-                menuMinimizar.Visible = true;
-                menuMaximizar.Visible = false;
-            }
+        private void btnCerrarSesion_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("¿Esta seguro de cerrar sesión?",
+                "Peligro", MessageBoxButtons.YesNo, MessageBoxIcon.Warning)
+                == DialogResult.Yes) this.Close();
         }
 
+
+        private void MostrarDatosPerfil()
+        {
+            MostrarCorreo.Text = UserSession.Email;
+            MostrarNombre.Text = UserSession.Username;
+            MostrarRol.Text = UserSession.Rol;
+        }
     }
 }
+
+//Teoria de la arquitectura tradicional en capas, tenemos 3. La capa de Presentación, Negocio/Dominio, Acceso a Datos/Persistencia,
+//Pero tambien hay una cuarta capa que estara siempre presente sobre todo en app web,
+//Cross-Cutting (Corte transversal), tambien conocido como capa común o soporte, esta capa es común para las demas, es decir que pueden
+//acceder a ella. La responsabilidad de esta capa es la gestión de seguridad y operaciones como; Autenticación, Autorización,
+//Almacenamiento en Caché, Comunicación, Gestión de la configuracion, gestion de excepciones, registro e instrumentación,
+//administracion del estado, validaciones de seguridad.

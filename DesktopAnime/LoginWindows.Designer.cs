@@ -131,6 +131,7 @@
             linkContra.TabIndex = 5;
             linkContra.TabStop = true;
             linkContra.Text = "Olvide mi contraseña";
+            linkContra.LinkClicked += linkContra_LinkClicked;
             // 
             // btnCloseLogin
             // 
@@ -201,12 +202,13 @@
             Controls.Add(txtUser);
             Controls.Add(panel1);
             FormBorderStyle = FormBorderStyle.None;
+            Icon = (Icon)resources.GetObject("$this.Icon");
             MaximizeBox = false;
             MinimizeBox = false;
             Name = "LoginWindows";
             Opacity = 0.9D;
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "Form1";
+            Text = "Anime Desktop v1.0.0.0";
             MouseDown += LoginWindows_MouseDown;
             panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
