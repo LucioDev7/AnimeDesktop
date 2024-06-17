@@ -23,15 +23,15 @@ namespace AnimeReposityTesteo
         public async Task TestGetByIDAnime()
         {
             AnimeRepository animeRepository = new AnimeRepository();
-            var anime = await animeRepository.GetByIDAsync("666122b3cdf88b1400001eda");
-            Assert.That(anime.nombre, Is.EqualTo("Kenka Dokugaku"));
+            var anime = await animeRepository.GetByIDAnimeAsync("66612379cdf88b1400001edd");
+            Assert.That(anime.nombre, Is.EqualTo("Kaijuu 8-gou"));
         }
 
         [Test]
         public async Task TestPostAnime()
         {
             AnimeRepository animeRepository = new AnimeRepository();
-            var anime = await animeRepository.PostAsync("Lucio234", "TipoTest", "GeneroTest", "Desconocido", "https://www3.animeflv.net/uploads/animes/covers/3989.jpg", "https://www.youtube.com/watch?v=Sf7RCzDvJlA&embeds_referring_euri=https%3A%2F%2Fjkanime.net%2F&source_ve_path=MjM4NTE&feature=emb_title", "https://jkanime.net/kenka-dokugaku/9/#option1", 24, "SinopsisTest");
+            var anime = await animeRepository.PostAnimeAsync("Lucio234", "TipoTest", "GeneroTest", "Desconocido", "https://www3.animeflv.net/uploads/animes/covers/3989.jpg", "https://www.youtube.com/watch?v=Sf7RCzDvJlA&embeds_referring_euri=https%3A%2F%2Fjkanime.net%2F&source_ve_path=MjM4NTE&feature=emb_title", "https://jkanime.net/kenka-dokugaku/9/#option1", 24, "SinopsisTest");
             Assert.That(anime.nombre, Is.EqualTo("Lucio234"));
         }
 
@@ -39,7 +39,7 @@ namespace AnimeReposityTesteo
         public async Task TestPutAnime()
         {
             AnimeRepository animeRepository = new AnimeRepository();
-            var anime = await animeRepository.PutAsync("Prueba", "TipoTest", "GeneroTest", "24", "https://www3.animeflv.net/uploads/animes/covers/3989.jpg", "https://www.youtube.com/watch?v=Sf7RCzDvJlA&embeds_referring_euri=https%3A%2F%2Fjkanime.net%2F&source_ve_path=MjM4NTE&feature=emb_title", "https://jkanime.net/kenka-dokugaku/9/#option1", 24, "SinopsisTest", "6661f359e97f2d3a00001763");
+            var anime = await animeRepository.PutAnimeAsync("Prueba", "TipoTest", "GeneroTest", "24", "https://www3.animeflv.net/uploads/animes/covers/3989.jpg", "https://www.youtube.com/watch?v=Sf7RCzDvJlA&embeds_referring_euri=https%3A%2F%2Fjkanime.net%2F&source_ve_path=MjM4NTE&feature=emb_title", "https://jkanime.net/kenka-dokugaku/9/#option1", 24, "SinopsisTest", "6661f359e97f2d3a00001763");
             Assert.That(anime.nombre, Is.EqualTo("Prueba"));
         }
 
@@ -47,7 +47,7 @@ namespace AnimeReposityTesteo
         public async Task TestDeleteAnime()
         {
             AnimeRepository animeRepository = new AnimeRepository();
-            var borrado = await animeRepository.DeleteAsync("66614386e97f2d3a00000014");
+            var borrado = await animeRepository.DeleteAnimeAsync("66614386e97f2d3a00000014");
             Assert.That(borrado, Is.EqualTo(true));
         }
 

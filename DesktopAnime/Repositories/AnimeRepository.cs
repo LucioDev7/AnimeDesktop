@@ -37,7 +37,7 @@ namespace DesktopAnime.Repositories
         }
 
         //Operación Get (Obtener datos según una ID)
-        public async Task<Anime?> GetByIDAsync(string id)
+        public async Task<Anime?> GetByIDAnimeAsync(string id)
         {
             var response = await client.GetStringAsync($"{urlApi}/{id}");
             return JsonConvert.DeserializeObject<Anime>(response);
@@ -45,7 +45,7 @@ namespace DesktopAnime.Repositories
         }
 
         //Operacion Post
-        public async Task<Anime?> PostAsync(string nombre, string tipo, string genero, string capitulo, string portada_url, string trailer_url, string ultimo_cap_url, int duracion, string sinopsis)
+        public async Task<Anime?> PostAnimeAsync(string nombre, string tipo, string genero, string capitulo, string portada_url, string trailer_url, string ultimo_cap_url, int duracion, string sinopsis)
         {
             //Objeto con los parámetros que llegan
             Anime anime = new Anime()
@@ -70,7 +70,7 @@ namespace DesktopAnime.Repositories
         }
 
         //Operacion Put
-        public async Task<Anime?> PutAsync(string nombre, string tipo, string genero, string capitulo, string portada_url, string trailer_url, string ultimo_cap_url, int duracion, string sinopsis, string id)
+        public async Task<Anime?> PutAnimeAsync(string nombre, string tipo, string genero, string capitulo, string portada_url, string trailer_url, string ultimo_cap_url, int duracion, string sinopsis, string id)
         {
             Anime anime = new Anime()
             {
@@ -99,7 +99,7 @@ namespace DesktopAnime.Repositories
         }
 
         //Operación Delete
-        public async Task<bool> DeleteAsync(string id)
+        public async Task<bool> DeleteAnimeAsync(string id)
         {
             var response = await client.DeleteAsync(urlApi + "/" + id);
             return response.IsSuccessStatusCode; //Retorno de solitud HTTP

@@ -3,16 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\Lucio\\Desktop\\Lucio\\Tarea\\AnimeDesktop\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{99188574-831B-49BF-A375-82F79F7F0CB4}|DesktopAnime\\DesktopAnime.csproj|c:\\users\\lucio\\desktop\\lucio\\tarea\\animedesktop\\desktopanime\\mainformswindows.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{99188574-831B-49BF-A375-82F79F7F0CB4}|DesktopAnime\\DesktopAnime.csproj|solutionrelative:desktopanime\\mainformswindows.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{99188574-831B-49BF-A375-82F79F7F0CB4}|DesktopAnime\\DesktopAnime.csproj|c:\\users\\lucio\\desktop\\lucio\\tarea\\animedesktop\\desktopanime\\mainformswindows.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{99188574-831B-49BF-A375-82F79F7F0CB4}|DesktopAnime\\DesktopAnime.csproj|solutionrelative:desktopanime\\mainformswindows.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{99188574-831B-49BF-A375-82F79F7F0CB4}|DesktopAnime\\DesktopAnime.csproj|c:\\users\\lucio\\desktop\\lucio\\tarea\\animedesktop\\desktopanime\\mainformswindows.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{99188574-831B-49BF-A375-82F79F7F0CB4}|DesktopAnime\\DesktopAnime.csproj|solutionrelative:desktopanime\\mainformswindows.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -47,39 +39,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "MainFormsWindows.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\Lucio\\Desktop\\Lucio\\Tarea\\AnimeDesktop\\DesktopAnime\\MainFormsWindows.cs",
-              "RelativeDocumentMoniker": "DesktopAnime\\MainFormsWindows.cs",
-              "ToolTip": "C:\\Users\\Lucio\\Desktop\\Lucio\\Tarea\\AnimeDesktop\\DesktopAnime\\MainFormsWindows.cs [Dise\u00F1o]",
-              "RelativeToolTip": "DesktopAnime\\MainFormsWindows.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-13T08:09:35.333Z",
-              "EditorCaption": " [Dise\u00F1o]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
               "Title": "MainFormsWindows.cs",
               "DocumentMoniker": "C:\\Users\\Lucio\\Desktop\\Lucio\\Tarea\\AnimeDesktop\\DesktopAnime\\MainFormsWindows.cs",
               "RelativeDocumentMoniker": "DesktopAnime\\MainFormsWindows.cs",
               "ToolTip": "C:\\Users\\Lucio\\Desktop\\Lucio\\Tarea\\AnimeDesktop\\DesktopAnime\\MainFormsWindows.cs",
               "RelativeToolTip": "DesktopAnime\\MainFormsWindows.cs",
-              "ViewState": "AQIAAGgAAAAAAAAAAAAAAHQAAAAlAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAPgAAAAxAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-13T02:48:49.35Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "MainFormsWindows.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\Lucio\\Desktop\\Lucio\\Tarea\\AnimeDesktop\\DesktopAnime\\MainFormsWindows.Designer.cs",
-              "RelativeDocumentMoniker": "DesktopAnime\\MainFormsWindows.Designer.cs",
-              "ToolTip": "C:\\Users\\Lucio\\Desktop\\Lucio\\Tarea\\AnimeDesktop\\DesktopAnime\\MainFormsWindows.Designer.cs",
-              "RelativeToolTip": "DesktopAnime\\MainFormsWindows.Designer.cs",
-              "ViewState": "AQIAAOYAAAAAAAAAAAAMwPgAAAA7AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-13T05:44:15.434Z",
+              "WhenOpened": "2024-06-17T18:25:18.244Z",
               "EditorCaption": ""
             }
           ]

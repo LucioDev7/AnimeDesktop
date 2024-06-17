@@ -10,9 +10,11 @@ namespace DesktopAnime
         public MainFormsWindows()
         {
             InitializeComponent();
-            //Estas lineas eliminan los parpadeos del formulario o controles en la interfaz grafica (Pero no en un 100%)
-            //this.SetStyle(ControlStyles.ResizeRedraw, true);
-            //this.DoubleBuffered = true;
+            //Estas lineas eliminan los parpadeos del formulario o controles en la interfaz grafica(Pero no en un 100 %)
+            this.SetStyle(ControlStyles.ResizeRedraw, true);
+            this.DoubleBuffered = true;
+
+            botonAdmin();
             MostrarDatosPerfil();
         }
 
@@ -109,25 +111,6 @@ namespace DesktopAnime
         {
             this.WindowState = FormWindowState.Minimized;
         }
-
-        private void menuMinMax_Click(object sender, EventArgs e)
-        {
-            if (panelMenu.Width == 225)
-            {
-                panelMenu.Width = 50;
-                panelPerfil.Height = 0;
-                menuMinimizar.Visible = false;
-                menuMaximizar.Visible = true;
-            }
-            else
-            {
-                panelPerfil.Height = 132;
-                panelMenu.Width = 225;
-                menuMinimizar.Visible = true;
-                menuMaximizar.Visible = false;
-
-            }
-        }
         #endregion
 
         #region MetodoGenericoAbrirFormularios
@@ -186,27 +169,48 @@ namespace DesktopAnime
         }
         private void CloseForms(object sender, EventArgs e)
         {
-            if (Application.OpenForms["Form1"] == null) button1.BackColor = Color.FromArgb(0, 100, 0);
-            if (Application.OpenForms["Form2"] == null) button2.BackColor = Color.FromArgb(0, 100, 0);
-            if (Application.OpenForms["Form3"] == null) button3.BackColor = Color.FromArgb(0, 100, 0);
+            if (Application.OpenForms["DatosAnimesWindow"] == null) button1.BackColor = Color.FromArgb(0, 100, 0);
+            if (Application.OpenForms["TrailersWindow"] == null) button2.BackColor = Color.FromArgb(0, 100, 0);
+            if (Application.OpenForms["CapitulosWindow"] == null) button3.BackColor = Color.FromArgb(0, 100, 0);
+            if (Application.OpenForms["DatosUsersWindow"] == null) button4.BackColor = Color.FromArgb(0, 100, 0);
+
         }
         private void button1_Click(object sender, EventArgs e)
         {
-            AbrirFormularios<Form1>();
+            AbrirFormularios<DatosAnimesWindow>();
             button1.BackColor = Color.FromArgb(34, 139, 34);
         }
 
-        //private void button2_Click(object sender, EventArgs e)
-        //{
-        //    AbrirFormularios<Form2>();
-        //    button2.BackColor = Color.FromArgb(34, 139, 34); //Al tocar el boton queda en este color
-        //}
+        private void button2_Click(object sender, EventArgs e)
+        {
+            AbrirFormularios<TrailersWindow>();
+            button2.BackColor = Color.FromArgb(34, 139, 34); //Al tocar el boton queda en este color
+        }
 
-        //private void button3_Click(object sender, EventArgs e)
-        //{
-        //    AbrirFormularios<Form3>();
-        //    button2.BackColor = Color.FromArgb(34, 139, 34);
-        //}
+        private void button3_Click(object sender, EventArgs e)
+        {
+            AbrirFormularios<CapitulosWindow>();
+            button3.BackColor = Color.FromArgb(34, 139, 34);
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            AbrirFormularios<DatosUsersWindow>();
+            button4.BackColor = Color.FromArgb(34, 139, 34);
+        }
+
+        private void botonAdmin()
+        {
+            string rol = UserSession.Rol;
+            if (rol == "admin")
+            {
+                button4.Visible = true;
+            }
+            else
+            {
+                button4.Visible = false;
+            }
+        }
 
         #endregion
 
@@ -223,6 +227,21 @@ namespace DesktopAnime
             MostrarCorreo.Text = UserSession.Email;
             MostrarNombre.Text = UserSession.Username;
             MostrarRol.Text = UserSession.Rol;
+        }
+
+        private void menuMinMax_Click_1(object sender, EventArgs e)
+        {
+            if (panelMenu.Width == 225)
+            {
+                panelMenu.Width = 50;
+                panelPerfil.Height = 0;
+            }
+            else
+            {
+                panelPerfil.Height = 132;
+                panelMenu.Width = 225;
+
+            }
         }
     }
 }
